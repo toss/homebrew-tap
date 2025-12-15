@@ -11,7 +11,7 @@ class Ax &lt; Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/toss/apps-in-toss-ax/release/download/v0.1.0/ax_darwin_arm64.tar.gz"
-      sha256 "d8aff0df0d12abaacaf5b5087c4a839e1854f7af52782d3088b71663c0b3277c"
+      sha256 "5c5453dbefcfec80a694b61a62c905669b5d81c2201ff05d4137bc5a6d533e66"
 
       def install
         bin.install "ax"
@@ -22,7 +22,7 @@ class Ax &lt; Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/toss/apps-in-toss-ax/release/download/v0.1.0/ax_darwin_amd64.tar.gz"
-      sha256 "1d35188185991795e0d3187eda195fc6954be6c189350d63fe9f23b04a5f4dc6"
+      sha256 "e311b984a227de7aab37a69f408749f02e881f1457948ec6edf636b192b75211"
 
       def install
         bin.install "ax"
@@ -36,7 +36,7 @@ class Ax &lt; Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/toss/apps-in-toss-ax/release/download/v0.1.0/ax_linux_arm64.tar.gz"
-      sha256 "de629704576b8c424cbba2dffc0fa54c3bcfe9dab2ffc6ac38ed834b76efbd5f"
+      sha256 "c6f60bb4056751bc8b0112d78d49b1e07cc836959a2391f0775f4451744b3e97"
 
       def install
         bin.install "ax"
@@ -47,7 +47,7 @@ class Ax &lt; Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/toss/apps-in-toss-ax/release/download/v0.1.0/ax_linux_amd64.tar.gz"
-      sha256 "d2603adc7eec79833b8fb2bcccce9af8dd749ca4076082ab4ba66dcd7f394b76"
+      sha256 "de64729953a2d4ed6de5a3f7e19cb9dd7f84e3a4743b29e2784d7e2875f02842"
 
       def install
         bin.install "ax"
