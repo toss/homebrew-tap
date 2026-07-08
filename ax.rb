@@ -5,13 +5,13 @@
 class Ax < Formula
   desc "AppsInToss CLI"
   homepage "https://toss.im"
-  version "0.7.0"
+  version "0.7.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/toss/apps-in-toss-ax/releases/download/v0.7.0/ax_darwin_arm64.tar.gz"
-      sha256 "b85ff63deaddf843acc0a159d8442d7724063d51f3eb9042b611b627c540854a"
+      url "https://github.com/toss/apps-in-toss-ax/releases/download/v0.7.1/ax_darwin_arm64.tar.gz"
+      sha256 "5ba213b3db18441614de6e4de2d83c0ce8093a0e7e8176dd2115047a886f67bc"
 
       def install
         bin.install "ax"
@@ -21,8 +21,8 @@ class Ax < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/toss/apps-in-toss-ax/releases/download/v0.7.0/ax_darwin_amd64.tar.gz"
-      sha256 "91d9bbddaf0c0b9f2cc1b1239ce6b9551a82ee6c0197167efa0e34cbb1c260cd"
+      url "https://github.com/toss/apps-in-toss-ax/releases/download/v0.7.1/ax_darwin_amd64.tar.gz"
+      sha256 "c985a7a828ba53b54e130f62bd23d3706009f1aa8abf341d245ae0c818e7df74"
 
       def install
         bin.install "ax"
@@ -35,8 +35,8 @@ class Ax < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/toss/apps-in-toss-ax/releases/download/v0.7.0/ax_linux_arm64.tar.gz"
-      sha256 "22aa6a293bb2a3e5baa6736639a07f2f06f69ff6a663573b116dc47e9cd433f6"
+      url "https://github.com/toss/apps-in-toss-ax/releases/download/v0.7.1/ax_linux_arm64.tar.gz"
+      sha256 "158319e065d34cf7735ce68a6e386ddcaf9d1617394e4a44637f1e70adef732e"
 
       def install
         bin.install "ax"
@@ -46,8 +46,8 @@ class Ax < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/toss/apps-in-toss-ax/releases/download/v0.7.0/ax_linux_amd64.tar.gz"
-      sha256 "b996575d7f57510f8b24acda71889418db804e83b0e4be9dfa8bf6f242391bc7"
+      url "https://github.com/toss/apps-in-toss-ax/releases/download/v0.7.1/ax_linux_amd64.tar.gz"
+      sha256 "f486ec6a22b0994807654038f930ea0e1674ed4eb08dab813f814e22d7fa2e1d"
 
       def install
         bin.install "ax"
